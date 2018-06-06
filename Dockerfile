@@ -21,7 +21,7 @@ RUN set -ex; \
 RUN set -ex; \
     echo "*** Install basic apk packages ***"; \
     apk add --no-cache openjdk8-jre tini su-exec wget curl net-tools unzip libzmq bash file; \
-    apk add --no-cache net-tools file htop atop glances tcpdump smem
+    apk add --no-cache net-tools file htop atop glances tcpdump smem; \
     apk add --no-cache -t .build-deps ca-certificates gnupg openssl; \
     apk update; \
     apk upgrade
